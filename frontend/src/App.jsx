@@ -15,7 +15,7 @@ function App() {
     formData.append("fast_forward", fastForward);
 
     setProcessing(true);
-    const response = await axios.post("http://localhost:8000/process/", formData, {
+    const response = await axios.post("https://smart-video-processor.onrender.com/process/", formData, {
       responseType: "blob",
     });
 
